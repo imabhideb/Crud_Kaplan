@@ -1,0 +1,30 @@
+Add
+
+mutation {
+  addBug(bug_name: "Bug", bug_status: "ToDO") {
+    id
+    bug_name
+    bug_status
+  }
+}
+
+
+
+Update
+
+mutation {
+  updateBug(id: 1, bug_name: "update", bug_status: "doing") {
+    id
+    bug_name
+    bug_status
+  }
+}
+
+
+
+
+Delete
+
+mutation {
+  deleteBug(id: 1)
+}
